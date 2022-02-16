@@ -1,0 +1,11 @@
+Product=input("Product Bought:")
+Quantity=input("How many did you buy:")
+Price=input("Enter Price:")
+Bill=int(Quantity)*float(Price)
+Vat=int(Bill)*20/100
+print()
+print("------------------------")
+print("Your bill is:£"+str(Bill))
+print("You have to pay:£"+str(Vat),"as Vat")
+print("Your Total Bill is:£"+str(Bill+Vat))
+print("------------------------")
