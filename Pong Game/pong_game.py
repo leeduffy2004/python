@@ -2,14 +2,14 @@
 import turtle as t
 import os
 
-# Score varibales
+# Score variables
 
 player_a_score = 0
 player_b_score = 0
 
 window = t.Screen()    # creating a window
 window.title("Ping-Pong Game") # Giving name to the game.
-window.bgcolor('purple')    # providing color to the HomeScreen
+window.bgcolor('black')    # providing color to the HomeScreen
 window.setup(width=800,height=600) # Size of the game panel 
 window.tracer(0)   # which speed up's the game.
 
@@ -29,7 +29,7 @@ paddle_right = t.Turtle()
 paddle_right.speed(0)
 paddle_right.shape('square')
 paddle_right.shapesize(stretch_wid=5,stretch_len=1)
-paddle_right.color('black')
+paddle_right.color('red')
 paddle_right.penup()
 paddle_right.goto(350,0)
 
@@ -86,8 +86,8 @@ def paddle_right_down():
 # Keyboard binding
 
 window.listen()
-window.onkey(paddle_left_up,"W")
-window.onkey(paddle_left_down,"S")
+window.onkey(paddle_left_up,"w")
+window.onkey(paddle_left_down,"s")
 window.onkey(paddle_right_up,"Up")
 window.onkey(paddle_right_down,"Down")
 
